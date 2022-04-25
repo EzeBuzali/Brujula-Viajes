@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header {
+    
+    background-color: #6495ed;
+    justify-content: space-between;
+    align-items: center;
+        
+    display: grid;
+    grid-template-columns: repeat(5,1fr);    
+    
+}
+    nav {
+        margin-top: 20px;
+    }
+
+.img-logo {
+    width: 130px;
+}
+.redes {
+    width: 150px;
+}
+main {
+    background-color:#555080 ;
+}
+.main-empresa h1 {
+    text-align: center;
+    color: yellowgreen;
+    font-family: 'Grape Nuts', cursive;
+}
+.main-empresa p {
+    font-family: cursive;
+}
+.main-promo h3 {
+    color: rgb(245, 53, 53);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 25px;
+}
+ 
+    .table1 {
+    margin-left: 20px;
+    background-color:yellowgreen;
+    border-width: 5px;
+    border-style: groove;
+    }
+        
+
+    .table2 {
+        margin-left: 20px;
+        background-color:greenyellow;
+        border-width: 5px;
+        border-style: groove;
+    
+    }
+    .main-promo p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .main-promo h5 {
+            color: aqua;
+            font-size:16px;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-weight: 200;}
+    
+            .section-dest {
+                display: flex;
+                text-align:center;
+                
+                                
+            }
+            .img-dest {
+                width: 250px;
+            }
+            .section-contacto {
+                display: grid;
+                grid-template-areas:
+                 "info-contacto info-contacto info-contacto"
+                 "formulario-contacto formulario-contacto playa1" ; 
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(2,1fr);
+                align-items: center;
+                width: 50%;
+                margin: auto;
+            }
+            .playa1 {
+                grid-area: playa1;
+                width: 200px;
+            }
+            
+            .info-contacto {
+                grid-area: info-contacto;
+               /* grid-column: 4 / span auto; */
+            }
+            
+            .formulario-contacto {
+                /* grid-column: 4 / span auto; */
+                grid-area: formulario-contacto;
+            }
+            
+
+.eslogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+        
+    }
+
+    .nosotros .container {
+        
+        text-align: center;
+        padding: 160px 12px;
+}
+.viajes {
+    background-color: rgb(13, 48, 165);
+    color:whitesmoke;
+    text-align: center;
+}
+.viajes .container {
+    padding: 20px;
+    
+}
+.img-viajes {
+    width: 320px;
+    height: 60vh;
+}
+.viajes p {
+    display: block;
+}
+.crucero {
+    text-align: center;
+}
+.crucero .container {
+    background-color:#274fd3 ;
+}
+.img-crucero {
+    width: 320px;
+    height: 60vh;
+}
+
+.crucero p {
+    display:block;
+}
+footer {
+    background-color: antiquewhite;
+    display: grid;
+    margin: 10px 5px 10px 5px;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+.mapa {
+    width: 200px;
+    
+}
+h1 {
+    font-size: 3.2em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1em;
+    color:rgb(255, 208, 0);
+    margin: 5px;
+    padding: 10px;
+    
+}
+p {
+    font-size: 1.30em;
+    font-family: 'Akshar', sans-serif;
+    font-style:oblique;
+    
+}
+
+button {
+font-size: 1.2em;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 10px;
+border: 1.5px solid #050505;
+color: whitesmoke;
+background-color: #31005f;
+}
+button:hover {
+font-size: 1.25em;
+border: 3px solid #050505;
+color: #bbf784;
+}
+
+@media (max-width:768px) {
+    header {    
+        grid-template-columns: repeat(1,1fr);    
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header ul {
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+    }
+    
+    header img {
+
+        width: 130px;
+        margin: auto;
+    }
+
+
+    .eslogan h1 {
+        font-size: 4em;
+    }
+    .nostros .container {
+        display: flex;
+        justify-content: center;
+    }
+    .nostros .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .viajes .container {
+        padding: 0px;
+        
+    }
+    .img-viajes {
+        width: 400px;
+        height: 60vh;
+    }
+    .viajes p {
+        display:flex;
+        display:none;
+        text-align: left;
+        padding-left: 20px; }
+       
+        .crucero {
+            text-align: center;
+        }
+        .img-crucero {
+            width: 400px;
+            height: 60vh;
+        }
+        .crucero p {
+            display:flex;
+            display:none;
+        }
+            
+        footer {
+            margin: 0;
+            padding-top: 30px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,auto);
+            align-items: center;
+            gap: 1em;
+        }
+    
+        footer img {
+            width: 100%;
+        }
+    
+    
+        .section-contacto {        
+            grid-template-areas:
+             "info-contacto" "playa1"
+             "formulario-contacto" ; 
+            grid-template-columns: 1fr  ;
+            grid-template-rows: repeat(3,1fr);
+            justify-content: center;
+        }
+}
+

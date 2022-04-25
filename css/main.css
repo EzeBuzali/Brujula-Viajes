@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;   
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    
+    background-color: #e0f7fa;
+    align-items: center;
+        
+    display: grid;
+    
+    grid-template-columns: repeat(4,1fr); 
+    justify-items: center;   
+    
+}
+
+
+nav{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+nav ul{
+    display: grid;    
+    align-items: center;
+    grid-template-columns: repeat(5,1fr); 
+    justify-items: center;   
+}
+nav li{
+    font-weight: 600;
+}
+a {
+    color: #525252;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #292929;
+}
+
+header .logo {
+    width: 85px;
+}
+
+.redes img{
+    width: 35px;
+    margin: 5px;
+}
+
+main {
+    background-color: #f1f8e9;
+
+}
+main .eslogan{
+    background-color: #5e6c88;
+    background-position: center;
+    background-image: url(../assets/imagenes/avion.jpg);
+    background-size: cover;
+    height: 70vh;
+    color: #f3f3f3;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+button {
+font-size: 16px;
+font-weight: bold;
+padding: 5px 10px;
+border-radius: 10px;
+border: 1.5px solid #050505;
+color: whitesmoke;
+background-color: #709edb;;
+}
+button:hover{
+    background-color: #b4b4b4;
+}
+
+main h1{
+    font-size: 30px;
+    margin-top: 70px;
+    color: #292929;
+
+}
+main .nosotros{
+    background-color: #709edb;
+    color: #f3f3f3 ;
+    box-shadow: 5px -10px 10px #747474ad;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    background-color:#e1f5fe ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.card-destinos{
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 250px ;
+    width: 80%;
+    margin: auto;
+}   
+
+@media (max-width: 768px) {
+    .card-destinos{ 
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3,1fr) ;
+        width:90%;
+    
+    }
+
+    footer {
+        margin: 0;
+        padding-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        align-items: center;
+        gap: 1em;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
+}
+
+.card-img{
+    background-color: black;
+    background-position: center;   
+    border-radius: 15px;
+    box-shadow: 5px 5px 13px #7474744f;
+    height: 210px;
+}
+
+
+
+.boton-card {
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+}
+
+
+.carta-madrid {
+    background-image: url(../assets/imagenes/madrid.jpg);
+    /** copiar los filtros de fondo que pone el chino **/
+}
+
+.carta-new-york {
+    background-image: url(../assets/imagenes/new\ york.jpg);
+    /** copiar los filtros de fondo que pone el chino **/
+}
+.carta-rio{
+    background-image: url(../assets/imagenes/rio\ de\ janeiro.jpg);
+    /** copiar los filtros de fondo que pone el chino **/
+}
+
+.crucero {
+   display: flex; 
+}
