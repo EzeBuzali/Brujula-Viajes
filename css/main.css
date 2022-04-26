@@ -4,20 +4,19 @@
     list-style-type: none;   
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 header {
     
     background-color: #e0f7fa;
     align-items: center;
-        
     display: grid;
-    
     grid-template-columns: repeat(4,1fr); 
-    justify-items: center;   
+    justify-items: center;
+    
     
 }
-
 
 nav{
     grid-column-start: 2;
@@ -30,9 +29,11 @@ nav ul{
     grid-template-columns: repeat(5,1fr); 
     justify-items: center;   
 }
+
 nav li{
     font-weight: 600;
 }
+
 a {
     color: #525252;
 }
@@ -40,6 +41,7 @@ a {
 nav a:hover {
     font-weight: bold;
     color: #292929;
+    font-size: 18px;
 }
 
 header .logo {
@@ -53,6 +55,7 @@ header .logo {
 
 main {
     background-color: #709edb;
+    
 
 }
 main .eslogan{
@@ -93,28 +96,86 @@ main .nosotros{
     text-align: center;
     padding: 15px;
 }
+main h2{
+    font-size: 35px;
+    font-weight:700;
+}
+
+main .nosotros p{
+    display: grid;
+    justify-content:center;
+    padding: 10px;
+    margin: 15px;
+    color: #080808;
+    font-size: 20px;
+    font-weight:500;
+}
+
+/* inico destinos html */
+
+.section-dest{
+    display: grid;
+    gap:20px;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:280px;
+    width: 76%;
+    margin: auto;
+}
+.img-dest{
+display: flex;
+width: 300px;
+border-radius: 15px;
+box-shadow: 5px 5px 13px #7474744f;
+}
+
+.section-dest p{
+    margin: 10px;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 500;
+}
+
+/* fin destinos.html */
 .card-destinos{
     display: grid;
     gap:20px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 250px ;
-    width: 80%;
+    grid-template-rows:280px;
+    width: 76%;
     margin: auto;
+    
 }   
+
 .card-destinos h5{
-    color: #880e4f;
-    font-size: 20px;
+    font-size: 25px;
+    display: grid;
+    justify-content:center;
+    justify-items: center;
 }
 
+.card-destinos form{
+    display: grid;
+    margin:60px;
+    justify-items: center;
+}
+    
+
+
+
+.card-destinos p{
+    font-weight: 500;
+}
 .card-img{
     background-color: black;
-    background-position: center;   
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    height: 220px;
+    width: auto;
     border-radius: 15px;
     box-shadow: 5px 5px 13px #7474744f;
-    height: 210px;
+    
 }
-
-
 
 .boton-card {
     padding: 10px;
@@ -127,16 +188,12 @@ main .nosotros{
 
 .carta-madrid {
     background-image: url(../assets/imagenes/madrid.jpg);
-    /** copiar los filtros de fondo que pone el chino **/
 }
-
 .carta-new-york {
     background-image: url(../assets/imagenes/new\ york.jpg);
-    /** copiar los filtros de fondo que pone el chino **/
 }
 .carta-rio{
     background-image: url(../assets/imagenes/rio\ de\ janeiro.jpg);
-    /** copiar los filtros de fondo que pone el chino **/
 }
 .carta-roma{
     background-image: url(../assets/imagenes/roma.jpg);
@@ -150,6 +207,8 @@ main .nosotros{
 
 .crucero-tit{
 text-align: center;
+margin-top: 25px;
+margin-bottom: 25px;
 }
 .crucero-tit h3{
     font-size: 23px;
@@ -158,25 +217,33 @@ text-align: center;
     font-size: 18px;
 }
 
+
+
 .crucero{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     
 }
-.crucero p{
-    margin:40px 40px 40px 40px;
+.crucero-text{
+    font-size: 17px;
+    font-weight: 500;
+     margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left:60px;
     
-
+        
     /* text-align: center;
     align-items: center; */
     
 }
     
     .crucero-contacto{
-              
+        display: flex;      
         text-align: center;
+        
         
     }
     .crucero-contacto button{
@@ -188,22 +255,35 @@ background-color: #80deea
     
 
 .crucero img{
-    width: 700px;
+    width: 620px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #31e9e94f;
 }
 
+.table1 {
+    margin-left: 20px;
+    background-color:yellowgreen;
+    border-width: 5px;
+    border-style: groove;
+    }
+        
+
+    .table2 {
+        margin-left: 20px;
+        background-color:greenyellow;
+        border-width: 5px;
+        border-style: groove;
+
+        }
 
 
 footer {
-    background-color:#e1f5fe ;
+    background-color:#e0f7fa;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
 }
-
-
-
-
 
 @media (max-width: 768px) {
     .card-destinos{ 
