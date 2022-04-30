@@ -7,6 +7,7 @@
     
 }
 
+
 header {
     
     background-color: #e0f7fa;
@@ -71,6 +72,35 @@ main .eslogan{
     text-align: center;
 
 }
+
+.eslogan {
+    animation: eslogan 2s infinite ease-in;
+}
+@keyframes eslogan {
+    0% {
+        letter-spacing: 10px;
+        margin-bottom: -10px;
+    }
+
+    33% {
+        letter-spacing: 14px;
+        margin-bottom: -10px;
+
+    }
+
+    66% {
+        letter-spacing: 18px;
+        margin-bottom: -10px;
+
+    }
+
+    100% {
+        letter-spacing: 10px;
+        margin-bottom: -10px;
+
+    }
+}
+
 button {
 font-size: 16px;
 font-weight: bold;
@@ -310,8 +340,32 @@ background-color: #80deea
              margin-right: 40px;
              padding-right: 10px;
              color: rgb(141, 0, 0);
+             animation: frase-contacto 3s infinite;
          }
+         
+         @keyframes frase-contacto {
+            0% {
+                color: #000000;
+                font-size: 30px;
+            }
         
+            50% {
+                color: #910071;
+                font-size: 35px;
+            }
+        
+            75% {
+                color: #350030;
+                font-size: 40px;
+            }
+        
+            100% {
+                color: #000000;
+                font-size: 30px;
+        
+            }
+        }
+
         /* Fin contacto html */
 
         /* Inicio empresa html */
