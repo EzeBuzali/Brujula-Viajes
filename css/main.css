@@ -122,7 +122,20 @@ width: 300px;
 border-radius: 15px;
 box-shadow: 5px 5px 13px #7474744f;
 }
+.animate__backInLeft{
+    animation: animate__animated animate__backInLeft 2s;
 
+}
+.animate__backInDown{
+    animation: animate__backInDown animate__animated 2s;
+}
+.animate__backInUp{
+    animation: animate__animated animate__backInUp 2s;
+
+}
+.animate__backInRight{
+    animation: animate__animated animate__backInRight 2s;
+}
 .section-dest p{
     margin: 10px;
     justify-content: center;
@@ -228,12 +241,8 @@ margin-bottom: 25px;
      margin-top: 15px;
     margin-bottom: 15px;
     padding-left:60px;
-    
-        
-    /* text-align: center;
-    align-items: center; */
-    
-}
+           
+    }
     
     .crucero-contacto{
         display: flex;      
@@ -279,33 +288,15 @@ background-color: #80deea
              font-weight: 700;
              margin-right: 40px;
              padding-right: 10px;
+            color: #001149;
              
-             color: #001149;
-             animation: frase-contacto 3s infinite;
          }
+         .animate__zoomInDown{
+            animation: animate__animated animate__zoomInDown 3s infinite;
+            color: #740060;
+         }
+                
          
-         /* @keyframes frase-contacto {
-            0% {
-                color: #000000;
-                font-size: 30px;
-            }
-        
-            50% {
-                color: #005018;
-                font-size: 35px;
-            }
-        
-            75% {
-                color: #02971b;
-                font-size: 40px;
-            }
-        
-            100% {
-                color: #000000;
-                font-size: 30px;
-        
-            }
-        } */
 
         /* Fin contacto html */
 
@@ -347,16 +338,29 @@ footer {
         grid-template-columns: 1fr ;
         grid-template-rows: repeat(3,1fr) ;
         width:90%;
+        }
+        .section-dest{
+            display: flex;
+            flex-direction: column;
+        }
+        .animate__animated{
+            animation:none
+        }
+         .crucero img{
+            width: 65%;
+         }   
+         .crucero-text{
+             display:none
+         }
+         .main-empresa p{
+             font-size: small;
+         }
+         .img-empresa{
+            width:400px;
+            height: 50vh;
+         }
+
     
-    }
-    /* .section-contacto {        
-        grid-template-areas:
-         "info-contacto" "playa1"
-         "formulario-contacto"; 
-        grid-template-columns: 1fr  ;
-        grid-template-rows: repeat(3,1fr);
-        justify-content: center;
-    } */
     footer {
         margin: 0;
         padding-top: 30px;
@@ -367,8 +371,10 @@ footer {
     }
 
     footer img {
-        width: 100%;
+        width: 55%;
+        margin-left: 70px;
     }
+        
 }
 
 
