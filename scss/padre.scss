@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;   
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+@import "variables";
+@import "nav";
+@import "main";
+@import "footer";
+
+@media (max-width: 768px) {
+    .card-destinos{ 
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3,1fr) ;
+        width:90%;
+        }
+        .section-dest{
+            display: flex;
+            flex-direction: column;
+        }
+        .animate__animated{
+            animation:none
+        }
+         .crucero img{
+            width: 65%;
+         }   
+         .crucero-text{
+             display:none
+         }
+         .main-empresa p{
+             font-size: small;
+         }
+         .img-empresa{
+            width:400px;
+            height: 50vh;
+         }
+
+    
+    footer {
+        margin: 0;
+        padding-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        align-items: center;
+        gap: 1em;
+
+        img {
+            width: 55%;
+            margin-left: 70px;
+        }
+    }
+
+        
+}
+
+
+
+
+
+
+
+
+

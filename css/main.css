@@ -1,65 +1,35 @@
- * {
-    padding: 0;
-    margin: 0; 
-    list-style-type: none;   
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    
-}
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
 
-header {
-    
-    background-color: #e0f7fa;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(4,1fr); 
-    justify-items: center;
-    
-    
-}
+nav li {
+  font-weight: 600; }
 
-nav{
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-nav ul{
-    display: grid;    
-    align-items: center;
-    grid-template-columns: repeat(5,1fr); 
-    justify-items: center;   
-}
-
-nav li{
-    font-weight: 600;
-}
-
-a {
-    color: #525252;
-}
-
-nav a:hover {
+nav a {
+  color: #525252; }
+  nav a:hover {
     transition: 0.6s linear;
     font-weight: bold;
     color: #292929;
-    font-size: 18px;
-}
+    font-size: 18px; }
 
-header .logo {
-    width: 85px;
-}
+nav .bg-celeste {
+  background-color: #e0f7fa; }
 
-.redes img{
-    width: 35px;
-    margin: 5px;
-}
+nav .logo {
+  width: 85px; }
+
+nav .redes img {
+  width: 35px;
+  margin: 5px; }
 
 main {
-    background-color: #709edb;
-    
-
-}
-main .eslogan{
+  background-color: #709edb;
+  /* corresponde al index.html */ }
+  main .eslogan {
     background-color: #5e6c88;
     background-position: center;
     background-image: url(../assets/imagenes/avion-portada.jpg);
@@ -69,308 +39,234 @@ main .eslogan{
     padding: 15px;
     width: 98%;
     text-align: center;
+    animation: eslogan 2s infinite ease-in; }
 
-}
-button {
-font-size: 16px;
-font-weight: bold;
-padding: 5px 10px;
-border-radius: 10px;
-border: 1.5px solid #050505;
-color: whitesmoke;
-background-color: #709edb;;
-}
-button:hover{
-    background-color: #080808;
-}
-
-main h1{
+@keyframes eslogan {
+  0% {
+    letter-spacing: 10px;
+    margin-bottom: -10px; }
+  33% {
+    letter-spacing: 14px;
+    margin-bottom: -10px; }
+  66% {
+    letter-spacing: 18px;
+    margin-bottom: -10px; }
+  100% {
+    letter-spacing: 10px;
+    margin-bottom: -10px; } }
+  main h1 {
     font-size: 38px;
     margin-top: 70px;
-    color: #292929;
-
-}
-main .nosotros{
+    color: #292929; }
+  main h2 {
+    font-size: 35px;
+    font-weight: 700; }
+  main .nosotros {
     background-color: #709edb;
-    color: #f3f3f3 ;
+    color: #f3f3f3;
     box-shadow: 5px -10px 10px #747474ad;
     text-align: center;
-    padding: 15px;
-}
-main h2{
-    font-size: 35px;
-    font-weight:700;
-}
-
-main .nosotros p{
-    display: grid;
-    justify-content:center;
-    padding: 10px;
-    margin: 15px;
-    color: #080808;
-    font-size: 20px;
-    font-weight:500;
-}
-
-/* inico destinos html */
-
-.section-dest{
-    display: grid;
-    gap:20px;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows:280px;
-    width: 76%;
-    margin: auto;
-}
-.img-dest{
-display: flex;
-width: 300px;
-border-radius: 15px;
-box-shadow: 5px 5px 13px #7474744f;
-}
-
-.section-dest p{
-    margin: 10px;
-    justify-content: center;
-    justify-items: center;
-    font-weight: 500;
-}
-
-/* fin destinos.html */
-.card-destinos{
-    display: grid;
-    gap:20px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:280px;
-    width: 76%;
-    margin: auto;
-    
-}   
-
-.card-destinos h5{
-    font-size: 25px;
-    display: grid;
-    justify-content:center;
-    justify-items: center;
-}
-
-.card-destinos form{
-    display: grid;
-    margin:60px;
-    justify-items: center;
-}
-    
-
-
-
-.card-destinos p{
-    font-weight: 500;
-}
-.card-img{
-    background-color: black;
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;   
-    height: 220px;
-    width: auto;
-    border-radius: 15px;
-    box-shadow: 5px 5px 13px #7474744f;
-    
-}
-
-.boton-card {
-    padding: 10px;
-    background-color: grey;
+    padding: 15px; }
+    main .nosotros p {
+      display: grid;
+      justify-content: center;
+      padding: 10px;
+      margin: 15px;
+      color: #080808;
+      font-size: 20px;
+      font-weight: 500; }
+  main button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
     border-radius: 10px;
-    color: white;
-    margin: auto;
-}
-
-
-.carta-madrid {
-    background-image: url(../assets/imagenes/madrid.jpg);
-}
-.carta-new-york {
-    background-image: url(../assets/imagenes/new\ york.jpg);
-}
-.carta-rio{
-    background-image: url(../assets/imagenes/rio\ de\ janeiro.jpg);
-}
-.carta-roma{
-    background-image: url(../assets/imagenes/roma.jpg);
-}
-.carta-miami{
-    background-image: url(../assets/imagenes/miami.jpg);
-}
-.carta-paris {
-    background-image: url(../assets/imagenes/paris.jpg);
-}
-
-.crucero-tit{
-text-align: center;
-margin-top: 25px;
-margin-bottom: 25px;
-}
-.crucero-tit h3{
-    font-size: 23px;
-}
-.crucero-tit h4{
-    font-size: 18px;
-}
-
-
-
-.crucero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
-.crucero-text{
-    font-size: 17px;
-    font-weight: 500;
-     margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left:60px;
-    
-        
-    /* text-align: center;
-    align-items: center; */
-    
-}
-    
-    .crucero-contacto{
-        display: flex;      
-        text-align: center;
-        
-        
-    }
-    .crucero-contacto button{
-background-color: #80deea
-    }
-    .crucero-contacto button:hover{
-        background-color: #080808;
-    }
-    
-
-.crucero img{
-    width: 620px;
-    border-radius: 20px;
-    box-shadow: 7px 7px 15px #31e9e94f;
-}
-
-.table1 {
-    margin-left: 20px;
-    background-color:yellowgreen;
-    border-width: 5px;
-    border-style: groove;
-    }
-        
-
-    .table2 {
-        margin-left: 20px;
-        background-color:greenyellow;
-        border-width: 5px;
-        border-style: groove;
-
-        }
-        /* inicio contacto html */
-        .contacto-main{
-            background-image: url(../assets/imagenes/playa-contactos.jpg);
-            background-color: #5e6c88;
-            background-position:center;
-            background-size:cover;
-            height: 80vh;
-            color: #141414;
-            font-size: 20px;
-            font-weight:500;
-            padding:15px;
-            width: 97%;
-            text-align: center;
-        }
-        .section-contacto {
-            display: flex;
-
-        }
-        .formulario-contacto{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 300px;
-            
-         }
-         .frase-contacto {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             font-size: 40px;
-             font-weight: 700;
-             margin-right: 40px;
-             padding-right: 10px;
-             color: rgb(141, 0, 0);
-         }
-        
-        /* Fin contacto html */
-
-        /* Inicio empresa html */
-        .main-empresa h1{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0px;
-            margin-bottom: 5px;
-        }
-        .main-empresa p{
-            text-align: center;
-            justify-content: center;
-            padding: 15px;
-            font-weight: 400;
-        }
-        .img-empresa{
-            display: flex;
-            width: 900px;
-            padding-left: 80px;
-            height: 100vh;
-        }
-        
-footer {
-    background-color:#e0f7fa;
+    border: 1.5px solid #050505;
+    color: whitesmoke;
+    background-color: #709edb; }
+    main button:hover {
+      background-color: #080808; }
+  main .card-destinos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-}
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+    width: 76%;
+    margin: auto; }
+    main .card-destinos h5 {
+      font-size: 25px;
+      display: grid;
+      justify-content: center;
+      justify-items: center; }
+    main .card-destinos form {
+      display: grid;
+      margin: 60px;
+      justify-items: center; }
+    main .card-destinos p {
+      font-weight: 500; }
+    main .card-destinos .card-img {
+      background-color: black;
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 220px;
+      width: auto;
+      border-radius: 15px;
+      box-shadow: 5px 5px 13px #7474744f; }
+      main .card-destinos .card-img button {
+        padding: 10px;
+        background-color: grey;
+        border-radius: 10px;
+        color: white;
+        margin: auto; }
+      main .card-destinos .card-img .carta-madrid {
+        background-image: url(../assets/imagenes/madrid.jpg); }
+      main .card-destinos .card-img .carta-new-york {
+        background-image: url(../assets/imagenes/new\york.jpg); }
+      main .card-destinos .card-img .carta-rio {
+        background-image: url(../assets/imagenes/rio\de\janeiro.jpg); }
+      main .card-destinos .card-img .carta-roma {
+        background-image: url(../assets/imagenes/roma.jpg); }
+      main .card-destinos .card-img .carta-miami {
+        background-image: url(../assets/imagenes/miami.jpg); }
+      main .card-destinos .card-img .carta-paris {
+        background-image: url(../assets/imagenes/paris.jpg); }
+    main .card-destinos .crucero-tit {
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+      main .card-destinos .crucero-tit h3 {
+        font-size: 23px; }
+      main .card-destinos .crucero-tit h4 {
+        font-size: 18px; }
+    main .card-destinos .crucero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* Fin index html */ }
+      main .card-destinos .crucero .crucero-text {
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 60px; }
+      main .card-destinos .crucero .crucero-contacto {
+        display: flex;
+        text-align: center; }
+        main .card-destinos .crucero .crucero-contacto button {
+          background-color: #80deea; }
+          main .card-destinos .crucero .crucero-contacto button:hover {
+            background-color: #080808; }
+      main .card-destinos .crucero img {
+        width: 620px;
+        border-radius: 20px;
+        box-shadow: 7px 7px 15px #31e9e94f; }
+  main .section-dest {
+    /* inicio destinos html */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 280px;
+    width: 76%;
+    margin: auto;
+    /* Fin destinos html */ }
+    main .section-dest img {
+      display: flex;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 13px #7474744f; }
+      main .section-dest img .animate__backInLeft {
+        animation: animate__animated animate__backInLeft 2s; }
+      main .section-dest img .animate__backInDown {
+        animation: animate__backInDown animate__animated 2s; }
+      main .section-dest img .animate__backInUp {
+        animation: animate__animated animate__backInUp 2s; }
+      main .section-dest img .animate__backInRight {
+        animation: animate__animated animate__backInRight 2s; }
+    main .section-dest p {
+      margin: 10px;
+      justify-content: center;
+      justify-items: center;
+      font-weight: 500; }
+  main .contacto-main {
+    /* inicio contacto html */
+    background-image: url(../assets/imagenes/playa-contactos.jpg);
+    background-color: #5e6c88;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    color: #141414;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    /* Fin contacto html */ }
+    main .contacto-main .frase-contacto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 700;
+      margin-right: 40px;
+      padding-right: 10px;
+      color: #001149; }
+    main .contacto-main .animate__zoomInDown {
+      animation: animate__animated animate__zoomInDown 3s infinite;
+      color: #740060; }
+  main .main-empresa h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 5px; }
+  main .main-empresa p {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-weight: 400; }
+  main .main-empresa .img-empresa {
+    display: flex;
+    width: 900px;
+    padding-left: 80px;
+    height: 100vh; }
+  main .main-empresa .main-promo {
+    background-color: #e6e6e6; }
+
+footer {
+  background-color: #e0f7fa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; }
 
 @media (max-width: 768px) {
-    .card-destinos{ 
-        grid-template-columns: 1fr ;
-        grid-template-rows: repeat(3,1fr) ;
-        width:90%;
-    
-    }
-    .section-contacto {        
-        grid-template-areas:
-         "info-contacto" "playa1"
-         "formulario-contacto" ; 
-        grid-template-columns: 1fr  ;
-        grid-template-rows: repeat(3,1fr);
-        justify-content: center;
-    }
-    footer {
-        margin: 0;
-        padding-top: 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,auto);
-        align-items: center;
-        gap: 1em;
-    }
-
+  .card-destinos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 90%; }
+  .section-dest {
+    display: flex;
+    flex-direction: column; }
+  .animate__animated {
+    animation: none; }
+  .crucero img {
+    width: 65%; }
+  .crucero-text {
+    display: none; }
+  .main-empresa p {
+    font-size: small; }
+  .img-empresa {
+    width: 400px;
+    height: 50vh; }
+  footer {
+    margin: 0;
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    gap: 1em; }
     footer img {
-        width: 100%;
-    }
-
-}
-
-
+      width: 55%;
+      margin-left: 70px; } }

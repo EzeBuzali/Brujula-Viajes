@@ -1,0 +1,8 @@
+footer {
+    background-color:#e0f7fa;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: $just-aling;
+    align-items: $just-aling;
+}
+
