@@ -27,8 +27,7 @@ nav .redes img {
   margin: 5px; }
 
 main {
-  background-color: #709edb;
-  /* corresponde al index.html */ }
+  background-color: #709edb; }
   main .eslogan {
     background-color: #5e6c88;
     background-position: center;
@@ -118,121 +117,112 @@ main {
         border-radius: 10px;
         color: white;
         margin: auto; }
-      main .card-destinos .card-img .carta-madrid {
-        background-image: url(../assets/imagenes/madrid.jpg); }
-      main .card-destinos .card-img .carta-new-york {
-        background-image: url(../assets/imagenes/new\york.jpg); }
-      main .card-destinos .card-img .carta-rio {
-        background-image: url(../assets/imagenes/rio\de\janeiro.jpg); }
-      main .card-destinos .card-img .carta-roma {
-        background-image: url(../assets/imagenes/roma.jpg); }
-      main .card-destinos .card-img .carta-miami {
-        background-image: url(../assets/imagenes/miami.jpg); }
-      main .card-destinos .card-img .carta-paris {
-        background-image: url(../assets/imagenes/paris.jpg); }
-    main .card-destinos .crucero-tit {
-      text-align: center;
-      margin-top: 25px;
-      margin-bottom: 25px; }
-      main .card-destinos .crucero-tit h3 {
-        font-size: 23px; }
-      main .card-destinos .crucero-tit h4 {
-        font-size: 18px; }
-    main .card-destinos .crucero {
+    main .card-destinos .carta-madrid {
+      background-image: url(../assets/imagenes/madrid.jpg); }
+    main .card-destinos .carta-new-york {
+      background-image: url(../assets/imagenes/new-york.jpg); }
+    main .card-destinos .carta-rio {
+      background-image: url(../assets/imagenes/rio.jpg); }
+    main .card-destinos .carta-roma {
+      background-image: url(../assets/imagenes/roma.jpg); }
+    main .card-destinos .carta-miami {
+      background-image: url(../assets/imagenes/miami.jpg); }
+    main .card-destinos .carta-paris {
+      background-image: url(../assets/imagenes/paris.jpg); }
+  main .crucero-tit {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    main .crucero-tit h3 {
+      font-size: 23px; }
+    main .crucero-tit h4 {
+      font-size: 18px; }
+  main .crucero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    main .crucero .crucero-text {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-left: 60px; }
+    main .crucero .crucero-contacto {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      /* Fin index html */ }
-      main .card-destinos .crucero .crucero-text {
-        font-size: 17px;
-        font-weight: 500;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding-left: 60px; }
-      main .card-destinos .crucero .crucero-contacto {
+      text-align: center; }
+      main .crucero .crucero-contacto button {
+        background-color: #80deea; }
+        main .crucero .crucero-contacto button:hover {
+          background-color: #080808; }
+    main .crucero .section-dest {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 280px;
+      width: 76%;
+      margin: auto; }
+      main .crucero .section-dest img {
         display: flex;
-        text-align: center; }
-        main .card-destinos .crucero .crucero-contacto button {
-          background-color: #80deea; }
-          main .card-destinos .crucero .crucero-contacto button:hover {
-            background-color: #080808; }
-      main .card-destinos .crucero img {
-        width: 620px;
-        border-radius: 20px;
-        box-shadow: 7px 7px 15px #31e9e94f; }
-  main .section-dest {
-    /* inicio destinos html */
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 280px;
-    width: 76%;
-    margin: auto;
-    /* Fin destinos html */ }
-    main .section-dest img {
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 13px #7474744f; }
+        main .crucero .section-dest img .animate__backInLeft {
+          animation: animate__animated animate__backInLeft 2s; }
+        main .crucero .section-dest img .animate__backInDown {
+          animation: animate__backInDown animate__animated 2s; }
+        main .crucero .section-dest img .animate__backInUp {
+          animation: animate__animated animate__backInUp 2s; }
+        main .crucero .section-dest img .animate__backInRight {
+          animation: animate__animated animate__backInRight 2s; }
+      main .crucero .section-dest p {
+        margin: 10px;
+        justify-content: center;
+        justify-items: center;
+        font-weight: 500; }
+    main .crucero .contacto-main {
+      background-image: url(../assets/imagenes/playa-contactos.jpg);
+      background-color: #5e6c88;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      color: #141414;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 15px;
+      width: 100%;
+      text-align: center; }
+      main .crucero .contacto-main .frase-contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-right: 40px;
+        padding-right: 10px;
+        color: #001149; }
+      main .crucero .contacto-main .animate__zoomInDown {
+        animation: animate__animated animate__zoomInDown 3s infinite;
+        color: #740060; }
+    main .crucero .main-empresa h1 {
       display: flex;
-      width: 300px;
-      border-radius: 15px;
-      box-shadow: 5px 5px 13px #7474744f; }
-      main .section-dest img .animate__backInLeft {
-        animation: animate__animated animate__backInLeft 2s; }
-      main .section-dest img .animate__backInDown {
-        animation: animate__backInDown animate__animated 2s; }
-      main .section-dest img .animate__backInUp {
-        animation: animate__animated animate__backInUp 2s; }
-      main .section-dest img .animate__backInRight {
-        animation: animate__animated animate__backInRight 2s; }
-    main .section-dest p {
-      margin: 10px;
+      text-align: center;
       justify-content: center;
-      justify-items: center;
-      font-weight: 500; }
-  main .contacto-main {
-    /* inicio contacto html */
-    background-image: url(../assets/imagenes/playa-contactos.jpg);
-    background-color: #5e6c88;
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    color: #141414;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    /* Fin contacto html */ }
-    main .contacto-main .frase-contacto {
+      margin-top: 0px;
+      margin-bottom: 5px; }
+    main .crucero .main-empresa p {
+      text-align: center;
+      justify-content: center;
+      padding: 15px;
+      font-weight: 400; }
+    main .crucero .main-empresa .img-empresa {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      font-weight: 700;
-      margin-right: 40px;
-      padding-right: 10px;
-      color: #001149; }
-    main .contacto-main .animate__zoomInDown {
-      animation: animate__animated animate__zoomInDown 3s infinite;
-      color: #740060; }
-  main .main-empresa h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 5px; }
-  main .main-empresa p {
-    text-align: center;
-    justify-content: center;
-    padding: 15px;
-    font-weight: 400; }
-  main .main-empresa .img-empresa {
-    display: flex;
-    width: 900px;
-    padding-left: 80px;
-    height: 100vh; }
-  main .main-empresa .main-promo {
-    background-color: #e6e6e6; }
+      width: 900px;
+      padding-left: 80px;
+      height: 100vh; }
+    main .crucero .main-empresa .main-promo {
+      background-color: #e6e6e6; }
 
 footer {
   background-color: #e0f7fa;

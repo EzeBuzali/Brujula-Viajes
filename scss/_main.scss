@@ -1,6 +1,6 @@
 main {
     background-color: #709edb;
-/* corresponde al index.html */
+
     .eslogan{
         background-color: #5e6c88;
         background-position: center;
@@ -108,34 +108,36 @@ main {
                     box-shadow: 5px 5px 13px #7474744f;
                     
 
-                    button{
+                    button {
                         padding: 10px;
                         background-color: grey;
                         border-radius: 10px;
                         color: white;
                         margin: auto;
                     }
-                    .carta-madrid {
-                        background-image: url(../assets/imagenes/madrid.jpg);
-                    }
                     
-                    .carta-new-york {
-                        background-image: url(../assets/imagenes/new\york.jpg);
-                    }
-                    .carta-rio{
-                        background-image: url(../assets/imagenes/rio\de\janeiro.jpg);
-                    }
-                    .carta-roma{
-                        background-image: url(../assets/imagenes/roma.jpg);
-                    }
-                    .carta-miami{
-                        background-image: url(../assets/imagenes/miami.jpg);
-                    }
-                    .carta-paris {
-                        background-image: url(../assets/imagenes/paris.jpg);
-                    }
                     
                 }
+                .carta-madrid {
+                    background-image: url(../assets/imagenes/madrid.jpg);
+                }
+                
+                .carta-new-york {
+                    background-image: url(../assets/imagenes/new-york.jpg);
+                }
+                .carta-rio{
+                    background-image: url(../assets/imagenes/rio.jpg);
+                }
+                .carta-roma{
+                    background-image: url(../assets/imagenes/roma.jpg);
+                }
+                .carta-miami{
+                    background-image: url(../assets/imagenes/miami.jpg);
+                }
+                .carta-paris {
+                    background-image: url(../assets/imagenes/paris.jpg);
+                }
+            }
                 .crucero-tit{
                     text-align: $just-aling;
                     margin-top: 25px;
@@ -149,7 +151,7 @@ main {
                         font-size: 18px;
                     }
 
-                    }
+                }
 
                     .crucero{
                         display: flex;
@@ -157,7 +159,7 @@ main {
                         align-items: $just-aling;
                         justify-content: $just-aling;
                         text-align: $just-aling;
-                        
+
                         .crucero-text{
                             font-size: 17px;
                             font-weight: 500;
@@ -179,20 +181,18 @@ main {
                                     }
                                         }         
 
-                            }
+                                                                    
+                                    }
 
-                            img{
-                                width: 620px;
-                                border-radius: 20px;
-                                box-shadow: 7px 7px 15px #31e9e94f;
-                            }
-                            /* Fin index html */
-                    }
-                }
+                           
+                           
+                    
+                        
+                
 
                         
                     .section-dest{
-                        /* inicio destinos html */
+                       
                         display: grid;
                         gap:20px;
                         grid-template-columns:repeat(2,1fr);
@@ -228,13 +228,13 @@ main {
                                 justify-items: $just-aling;
                                 font-weight: 500;
                             }
-                            /* Fin destinos html */
+                          
                     }
                     
 
                       
                     .contacto-main{
-                        /* inicio contacto html */
+                      
                         background-image: url(../assets/imagenes/playa-contactos.jpg);
                         background-color: #5e6c88;
                         background-position:center;
@@ -262,7 +262,7 @@ main {
                             animation: animate__animated animate__zoomInDown 3s infinite;
                             color: #740060;
                         }
-                        /* Fin contacto html */
+                      
                     }
                    
                    
@@ -297,9 +297,5 @@ main {
         } 
                                   
                 
-                
-    }  
-             
-                                                      
-                      
-
+    }
+}
