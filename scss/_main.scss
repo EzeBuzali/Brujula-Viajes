@@ -1,3 +1,45 @@
+// Detallo en lo enviado lo sucedido con el desafio
+
+//maps
+// En este caso no se como aplicarlo, no me doy cuenta si reemplaza una clase existente, si tengo utilizar el nombre de una clase ya creada en el html, si tengo que llamar a una nueva, sinceramente no entendi como aplicar maps y menos como hacer que funcione.
+// $redes: (
+//     instagram: violet,
+//     facebook: #0b0b7e,
+//     whatsapp: greenyellow,
+    
+// );
+// @each $red, $color in $redes {
+//     .red-#{$red} {
+//         color: $color;
+//         width: 35px;
+//         margin: 5px;
+//     }
+// } 
+// // mixin
+// el ejemlo del profesor lo entendi, pero no se como aplicarlo ya que no encuentro 2 o mas valores que pueda aplicar en 2 etiquetas a la vez, ya que pocos valores se repiten y no entiendo bien la funcion
+// // @mixin size {
+//     margin: 10px;
+//     font-weight: 500;
+// }
+          
+    
+// p{
+//     @include size;
+//     justify-content: $just-aling;
+//     justify-items: $just-aling;
+    
+// }
+// //extend
+// en este caso me pasa lo mismo que los anteriores, no entiendo caundo utilizarlo( mas alla de que entiendo su funcion)
+// .crucero-text{
+//     @extend .crucero;
+//     font-size: 17px;
+//     font-weight: 500;
+//      margin-top: $pym15;
+//     margin-bottom: $pym15;
+//     padding-left:60px;
+           
+//     }
 main {
     background-color: #709edb;
 
@@ -161,6 +203,7 @@ main {
                         text-align: $just-aling;
 
                         .crucero-text{
+                            @extend .crucero;
                             font-size: 17px;
                             font-weight: 500;
                              margin-top: $pym15;
@@ -170,6 +213,7 @@ main {
                             }
 
                             .crucero-contacto{
+                                @extend .crucero;
                                 display: flex;      
                                 text-align: $just-aling;
 
@@ -221,12 +265,17 @@ main {
                                 animation: animate__animated animate__backInRight 2s;
                             }
                             }
-                                                
-                            p{
+                            @mixin size {
                                 margin: 10px;
+                                font-weight: 500;
+                            }
+                                      
+                                
+                            p{
+                                @include size;
                                 justify-content: $just-aling;
                                 justify-items: $just-aling;
-                                font-weight: 500;
+                                
                             }
                           
                     }
