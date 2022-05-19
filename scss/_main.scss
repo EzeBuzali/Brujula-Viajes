@@ -129,16 +129,17 @@ main {
                     justify-content:$just-aling;
                     justify-items: $just-aling;
                 }
-
+                p{
+                    font-weight: 500;
+                    
+                }
                 form{
                     display: grid;
                     margin:60px;
                     justify-items: $just-aling;
                 }
 
-                p{
-                    font-weight: 500;
-                }
+               
                 .card-img{
                     background-color: black;
                     background-position: center center;
@@ -156,6 +157,9 @@ main {
                         border-radius: 10px;
                         color: white;
                         margin: auto;
+                        &:hover{
+                            background-color: #080808;
+                        }
                     }
                     
                     
@@ -201,7 +205,11 @@ main {
                         align-items: $just-aling;
                         justify-content: $just-aling;
                         text-align: $just-aling;
-
+                        img{
+                            width: 620px;
+                            border-radius: 20px;
+                            box-shadow: 7px 7px 15px #31e9e94f;
+                        }
                         .crucero-text{
                             @extend .crucero;
                             font-size: 17px;
@@ -228,7 +236,7 @@ main {
                                                                     
                                     }
 
-                           
+                                }
                            
                     
                         
@@ -279,72 +287,72 @@ main {
                             }
                           
                     }
-                    
-
-                      
-                    .contacto-main{
-                      
-                        background-image: url(../assets/imagenes/playa-contactos.jpg);
-                        background-color: #5e6c88;
-                        background-position:center;
-                        background-size:cover;
-                        height:auto;
-                        color: #141414;
-                        font-size: 20px;
-                        font-weight:500;
-                        padding: $pym15;
-                        width: 100%;
-                        text-align: $just-aling;
-
-                        .frase-contacto {
-                            display: flex;
-                            align-items: $just-aling;
-                            justify-content: $just-aling;
-                            font-size: 40px;
-                            font-weight: 700;
-                            margin-right: 40px;
-                            padding-right: 10px;
-                            color: #001149;
-                            
-                        }
-                        .animate__zoomInDown{
-                            animation: animate__animated animate__zoomInDown 3s infinite;
-                            color: #740060;
-                        }
-                      
-                    }
-                   
-                   
-                   
-        .main-empresa{
-        
-            h1{
-                display: flex;
-                text-align: $just-aling;
-                justify-content: $just-aling;
-                margin-top: 0px;
-                margin-bottom: 5px;
-            }
-
-            p{
-                text-align: $just-aling;
-                justify-content: $just-aling;
-                padding: $pym15;
-                font-weight: 400;
-            }
-
-            .img-empresa{
-                display: flex;
-                width: 900px;
-                padding-left: 80px;
-                height: 100vh;
-            }
-            .main-promo{
-                background-color: #e6e6e6;
-            }
-            
-        } 
-                                  
-                
+                 
     }
-}
+    .contacto-main {
+                      
+        background-image: url(../assets/imagenes/playa-contactos.jpg);
+        background-color: #5e6c88;
+        background-position:center;
+        background-size:cover;
+        height:auto;
+        color: #141414;
+        font-size: 20px;
+        font-weight:500;
+        padding: $pym15;
+        width: 100%;
+        text-align: $just-aling;
+
+        .frase-contacto {
+            display: flex;
+            align-items: $just-aling;
+            justify-content: $just-aling;
+            font-size: 40px;
+            font-weight: 700;
+            margin-right: 40px;
+            padding-right: 10px;
+            color: #001149;
+            
+        }
+        .animate__zoomInDown{
+            animation: animate__animated animate__zoomInDown 3s infinite;
+            color: #740060;
+        }
+      
+       
+
+    }
+
+    .main-empresa {
+        
+        h1{
+            display: flex;
+            text-align: $just-aling;
+            justify-content: $just-aling;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        p{
+            text-align: $just-aling;
+            justify-content: $just-aling;
+            padding: $pym15;
+            font-weight: 400;
+        }
+
+        .img-empresa{
+            display: flex;
+            width: 900px;
+            padding-left: 80px;
+            height: 100vh;
+        }
+        
+        
+    } 
+
+    .main-promo{
+        background-color: #e6e6e6;
+    }
+  
+   
+    

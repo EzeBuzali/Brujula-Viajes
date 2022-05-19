@@ -96,12 +96,12 @@ main {
       display: grid;
       justify-content: center;
       justify-items: center; }
+    main .card-destinos p {
+      font-weight: 500; }
     main .card-destinos form {
       display: grid;
       margin: 60px;
       justify-items: center; }
-    main .card-destinos p {
-      font-weight: 500; }
     main .card-destinos .card-img {
       background-color: black;
       background-position: center center;
@@ -117,6 +117,8 @@ main {
         border-radius: 10px;
         color: white;
         margin: auto; }
+        main .card-destinos .card-img button:hover {
+          background-color: #080808; }
     main .card-destinos .carta-madrid {
       background-image: url(../assets/imagenes/madrid.jpg); }
     main .card-destinos .carta-new-york {
@@ -143,6 +145,10 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center; }
+    main .crucero img, main .crucero .crucero-text img, main .crucero .crucero-contacto img {
+      width: 620px;
+      border-radius: 20px;
+      box-shadow: 7px 7px 15px #31e9e94f; }
     main .crucero .crucero-text {
       font-size: 17px;
       font-weight: 500;
@@ -156,73 +162,78 @@ main {
         background-color: #80deea; }
         main .crucero .crucero-contacto button:hover {
           background-color: #080808; }
-    main .crucero .section-dest {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 280px;
-      width: 76%;
-      margin: auto; }
-      main .crucero .section-dest img {
-        display: flex;
-        width: 300px;
-        border-radius: 15px;
-        box-shadow: 5px 5px 13px #7474744f; }
-        main .crucero .section-dest img .animate__backInLeft {
-          animation: animate__animated animate__backInLeft 2s; }
-        main .crucero .section-dest img .animate__backInDown {
-          animation: animate__backInDown animate__animated 2s; }
-        main .crucero .section-dest img .animate__backInUp {
-          animation: animate__animated animate__backInUp 2s; }
-        main .crucero .section-dest img .animate__backInRight {
-          animation: animate__animated animate__backInRight 2s; }
-      main .crucero .section-dest p {
-        margin: 10px;
-        font-weight: 500;
-        justify-content: center;
-        justify-items: center; }
-    main .crucero .contacto-main {
-      background-image: url(../assets/imagenes/playa-contactos.jpg);
-      background-color: #5e6c88;
-      background-position: center;
-      background-size: cover;
-      height: auto;
-      color: #141414;
-      font-size: 20px;
+  main .section-dest {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 280px;
+    width: 76%;
+    margin: auto; }
+    main .section-dest img {
+      display: flex;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 13px #7474744f; }
+      main .section-dest img .animate__backInLeft {
+        animation: animate__animated animate__backInLeft 2s; }
+      main .section-dest img .animate__backInDown {
+        animation: animate__backInDown animate__animated 2s; }
+      main .section-dest img .animate__backInUp {
+        animation: animate__animated animate__backInUp 2s; }
+      main .section-dest img .animate__backInRight {
+        animation: animate__animated animate__backInRight 2s; }
+    main .section-dest p {
+      margin: 10px;
       font-weight: 500;
-      padding: 15px;
-      width: 100%;
-      text-align: center; }
-      main .crucero .contacto-main .frase-contacto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
-        font-weight: 700;
-        margin-right: 40px;
-        padding-right: 10px;
-        color: #001149; }
-      main .crucero .contacto-main .animate__zoomInDown {
-        animation: animate__animated animate__zoomInDown 3s infinite;
-        color: #740060; }
-    main .crucero .main-empresa h1 {
-      display: flex;
-      text-align: center;
       justify-content: center;
-      margin-top: 0px;
-      margin-bottom: 5px; }
-    main .crucero .main-empresa p {
-      text-align: center;
-      justify-content: center;
-      padding: 15px;
-      font-weight: 400; }
-    main .crucero .main-empresa .img-empresa {
-      display: flex;
-      width: 900px;
-      padding-left: 80px;
-      height: 100vh; }
-    main .crucero .main-empresa .main-promo {
-      background-color: #e6e6e6; }
+      justify-items: center; }
+
+.contacto-main {
+  background-image: url(../assets/imagenes/playa-contactos.jpg);
+  background-color: #5e6c88;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  color: #141414;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  width: 100%;
+  text-align: center; }
+  .contacto-main .frase-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 40px;
+    padding-right: 10px;
+    color: #001149; }
+  .contacto-main .animate__zoomInDown {
+    animation: animate__animated animate__zoomInDown 3s infinite;
+    color: #740060; }
+
+.main-empresa h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 5px; }
+
+.main-empresa p {
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  font-weight: 400; }
+
+.main-empresa .img-empresa {
+  display: flex;
+  width: 900px;
+  padding-left: 80px;
+  height: 100vh; }
+
+.main-promo {
+  background-color: #e6e6e6; }
 
 footer {
   background-color: #e0f7fa;
@@ -232,7 +243,7 @@ footer {
   align-items: center; }
 
 @media (max-width: 768px) {
-  .card-destinos {
+  .viajes .card-destinos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     width: 90%; }
@@ -243,13 +254,13 @@ footer {
     animation: none; }
   .crucero img, main .crucero .crucero-text img, main .crucero .crucero-contacto img {
     width: 65%; }
-  .crucero-text {
+  .crucero .crucero-text, main .crucero .crucero-text .crucero-text, main .crucero .crucero-contacto .crucero-text {
     display: none; }
   .main-empresa p {
     font-size: small; }
-  .img-empresa {
-    width: 400px;
-    height: 50vh; }
+  .main-empresa .img-empresa {
+    width: 450px;
+    height: 60vh; }
   footer {
     margin: 0;
     padding-top: 30px;

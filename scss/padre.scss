@@ -11,12 +11,35 @@
 @import "main";
 @import "footer";
 
+
+// No me toma la media quieries de lo siguiente: ( me gustaria saber donde se encuenta el error ya que no se aplica lo escrito en estos casos pero en los otros si)
+// Esto me sucede en sass, porque en el anterior desafio cuando no utulizabamos sass y si css, se aplicaba de forma correcta.
+// .section-dest{
+//     display: flex;
+//     flex-direction: column;
+// }
+// .animate__animated{
+//     animation:none
+// }
+//  .crucero {
+//     img{
+//         width: 65%;
+//      }  
+//      .crucero-text {
+//         display:none
+//     } 
+//  } 
+
+// Ademas te comento que no llegue a realizar el mapa, el cual tengo un poco mas claro que la ultima entrega.
+
 @media (max-width: 768px) {
-    .card-destinos{ 
-        grid-template-columns: 1fr ;
-        grid-template-rows: repeat(3,1fr) ;
-        width:90%;
-        }
+    .viajes{
+        .card-destinos { 
+            grid-template-columns: 1fr ;
+            grid-template-rows: repeat(3,1fr) ;
+            width:90%;
+            }
+    }
         .section-dest{
             display: flex;
             flex-direction: column;
@@ -24,20 +47,26 @@
         .animate__animated{
             animation:none
         }
-         .crucero img{
-            width: 65%;
-         }   
-         .crucero-text{
-             display:none
-         }
-         .main-empresa p{
-             font-size: small;
-         }
-         .img-empresa{
-            width:400px;
-            height: 50vh;
-         }
-
+         .crucero {
+            img{
+                width: 65%;
+             }  
+             .crucero-text {
+                display:none
+            } 
+         } 
+         
+         .main-empresa {
+            p {
+                font-size: small;
+            }
+            .img-empresa {
+                width:450px;
+                height:60vh;
+             }
+    
+         } 
+         
     
     footer {
         margin: 0;
@@ -55,12 +84,3 @@
 
         
 }
-
-
-
-
-
-
-
-
-
