@@ -16,7 +16,7 @@ main {
         animation: eslogan 2s infinite ease-in;
     }
     .viajes {
-        text-align: center;
+        text-align: $just-aling;
     }
  
 @keyframes eslogan {
@@ -110,7 +110,7 @@ main {
                     background-repeat: no-repeat;   
                     height: 220px;
                     width: auto;
-                    border-radius: 15px;
+                    border-radius: $pym15;
                     box-shadow: 5px 5px 13px #7474744f;
                     
 
@@ -218,7 +218,7 @@ main {
                         img{
                             display: flex;
                             width: 300px;
-                            border-radius: 15px;
+                            border-radius: $pym15;
                             box-shadow: 5px 5px 13px #7474744f;
                             
                             .animate__backInLeft{
@@ -291,7 +291,7 @@ main {
         display: flex;
         margin: auto;
         justify-content: space-around;
-        align-items: center;
+        align-items: $just-aling;
         padding: 25px;
 
         div {
