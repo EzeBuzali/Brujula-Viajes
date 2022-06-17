@@ -1,0 +1,420 @@
+main {
+    min-height: calc(100vh - 200px);
+    background-color: #709edb;
+  
+
+    .eslogan{
+        background-color: #5e6c88;
+        background-position: center;
+        background-image: url(../assets/imagenes/avion-portada.jpg);
+        background-size: cover;
+        height: 70vh;
+        color: $color-primary;
+        padding: $pym15;
+        width: 100%;
+        text-align: $just-aling;
+        animation: eslogan 2s infinite ease-in;
+    }
+    .viajes {
+        text-align: center;
+    }
+ 
+@keyframes eslogan {
+    0% {
+        letter-spacing: 10px;
+        margin-bottom: -10px;
+    }
+
+    33% {
+        letter-spacing: 14px;
+        margin-bottom: -10px;
+    }
+
+    66% {
+        letter-spacing: 18px;
+        margin-bottom: -10px;
+    }
+
+    100% {
+        letter-spacing: 10px;
+        margin-bottom: -10px;
+    }
+}
+        h1{
+        font-size: 38px;
+        margin-top: 70px;
+        color: #292929;
+        }
+        h2{
+            font-size: 35px;
+            font-weight:700;
+        }
+        .nosotros{
+            background-color: #709edb;
+            color: $color-primary;
+            box-shadow: 5px -10px 10px #747474ad;
+            text-align: $just-aling;
+            padding:$pym15;
+            p{
+                display: grid;
+                justify-content:$just-aling;
+                padding: 10px;
+                margin: $pym15;
+                color: #080808;
+                font-size: 20px;
+                font-weight:500;
+            }
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1.5px solid #050505;
+            color: whitesmoke;
+            background-color: #709edb;;
+            &:hover{
+                background-color: #080808;
+            }
+            }
+            .card-destinos{
+                display: grid;
+                gap:20px;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows:280px;
+                width: 76%;
+                margin: auto;
+
+                h5{
+                    font-size: 25px;
+                    display: grid;
+                    justify-content:$just-aling;
+                    justify-items: $just-aling;
+                }
+                p{
+                    font-weight: 500;
+                    
+                }
+                form{
+                    display: grid;
+                    margin:60px;
+                    justify-items: $just-aling;
+                }
+
+               
+                .card-img{
+                    background-color: black;
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;   
+                    height: 220px;
+                    width: auto;
+                    border-radius: 15px;
+                    box-shadow: 5px 5px 13px #7474744f;
+                    
+
+                    button {
+                        padding: 10px;
+                        background-color: grey;
+                        border-radius: 10px;
+                        color: white;
+                        margin: auto;
+                        &:hover{
+                            background-color: #080808;
+                        }
+                    }
+                    
+                    
+                }
+                .carta-madrid {
+                    background-image: url(../assets/imagenes/madrid.jpg);
+                }
+                
+                .carta-new-york {
+                    background-image: url(../assets/imagenes/new-york.jpg);
+                }
+                .carta-rio{
+                    background-image: url(../assets/imagenes/rio.jpg);
+                }
+                .carta-roma{
+                    background-image: url(../assets/imagenes/roma.jpg);
+                }
+                .carta-miami{
+                    background-image: url(../assets/imagenes/miami.jpg);
+                }
+                .carta-paris {
+                    background-image: url(../assets/imagenes/paris.jpg);
+                }
+            }
+                .crucero-tit{
+                    text-align: $just-aling;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+
+                    h3{
+                        font-size: 23px;
+                    }
+
+                    h4{
+                        font-size: 18px;
+                    }
+
+                }
+
+                    .crucero{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: $just-aling;
+                        justify-content: $just-aling;
+                        text-align: $just-aling;
+                        img{
+                            width: 620px;
+                            border-radius: 20px;
+                            box-shadow: 7px 7px 15px #31e9e94f;
+                        }
+                        .crucero-text{
+                            @extend .crucero;
+                            font-size: 17px;
+                            font-weight: 500;
+                             margin-top: $pym15;
+                            margin-bottom: $pym15;
+                            padding-left:60px;
+                                   
+                            }
+
+                            .crucero-contacto{
+                                @extend .crucero;
+                                display: flex;      
+                                text-align: $just-aling;
+
+                                button{
+                                    background-color: #80deea;
+
+                                    &:hover{
+                                        background-color: #080808;
+                                    }
+                                        }         
+
+                                                                    
+                                    }
+
+                                }
+                           
+                    
+                        
+                
+
+                        
+                    .section-dest{
+                       
+                        display: grid;
+                        gap:20px;
+                        grid-template-columns:repeat(2,1fr);
+                        grid-template-rows:280px;
+                        width: 76%;
+                        margin: auto;
+                    
+                        img{
+                            display: flex;
+                            width: 300px;
+                            border-radius: 15px;
+                            box-shadow: 5px 5px 13px #7474744f;
+                            
+                            .animate__backInLeft{
+                                animation: animate__animated animate__backInLeft 2s;
+                            
+                            }
+                            .animate__backInDown{
+                                animation: animate__backInDown animate__animated 2s;
+                            }
+                            .animate__backInUp{
+                                animation: animate__animated animate__backInUp 2s;
+                            
+                            }
+                            .animate__backInRight{
+                                animation: animate__animated animate__backInRight 2s;
+                            }
+                            }
+                            @mixin size {
+                                margin: 10px;
+                                font-weight: 500;
+                            }
+                                      
+                                
+                            p{
+                                @include size;
+                                justify-content: $just-aling;
+                                justify-items: $just-aling;
+                                
+                            }
+                          
+                    }
+                 
+    }
+    .contacto-main {
+                      
+        background-image: url(../assets/imagenes/playa-contactos.jpg);
+        background-color: #5e6c88;
+        background-position:center;
+        background-size:cover;
+        height:auto;
+        color: #141414;
+        font-size: 20px;
+        font-weight:500;
+        padding: $pym15;
+        width: 100%;
+        text-align: $just-aling;
+
+        .frase-contacto {
+            display: flex;
+            align-items: $just-aling;
+            justify-content: $just-aling;
+            font-size: 40px;
+            font-weight: 700;
+            margin-right: 40px;
+            padding-right: 10px;
+            color: #001149;
+            
+        }
+        .animate__zoomInDown{
+            animation: animate__animated animate__zoomInDown 3s infinite;
+            color: #084298;
+        }
+      
+       
+
+    }
+
+    .main-empresa {
+
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+
+        div {
+            width: 50%;
+        }
+
+
+        
+        h1{
+                        
+            text-align: $just-aling;
+            justify-content: $just-aling;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        p{
+            text-align: $just-aling;
+            justify-content: $just-aling;
+            padding: $pym15;
+            font-weight: 400;
+        }
+
+        .img-empresa{
+            max-width: 100%;
+            padding-left: 40px;
+            height: auto;
+        }
+        
+        
+    } 
+
+    .main-promo{
+        background-color: #e6e6e6;
+    }
+  
+    .main-destinos {
+
+        .img-destinos-destacado {
+            min-height: 100%;
+            background-size: cover;
+            background-position: 0px -165px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Estatua_de_la_Libertad_New_York.jpg');
+        }
+    
+        .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 1.5rem; 
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; 
+      }
+      .gallery-item--1 {
+    
+      grid-column: 1 / span 2; 
+      grid-row: 1 / span 2;
+    }
+    
+    .gallery-item--2 {
+    
+      grid-column: 3 / span 2; 
+      grid-row: 1 / span 2;
+    }
+    
+    .gallery-item--3 {
+     
+      grid-column: 5 / span 4;
+      grid-row: 1 / span 5; 
+    }
+    
+    .gallery-item--4 {
+     
+      grid-column: 1 / span 4; 
+      grid-row: 3 / span 3;
+    }
+    
+    .gallery-item--5 {
+    
+      grid-column: 1 / span 4;
+      grid-row: 6 / span 3;
+    }
+    
+    .gallery-item--6 {
+     
+      grid-column: 5 / span 4;
+      grid-row: 6 / span 3;
+    }
+    
+    
+    .gallery-item{
+        position:relative;
+        
+        .promo {
+        top: 0;
+        left: 0;
+        }
+        .destino {
+            bottom:  0;
+            left: 0;
+            background: linear-gradient(1deg, black, transparent);
+            color: #ffff;
+            width: 100%;
+            padding:55px 10px 10px 10px;
+            margin:0;
+        }
+        .precio {
+            bottom:  0;
+        right: 0;
+        }
+    }
+
+
+    }
+    
+    
+    
+    
+    
+        
+    }
+   
