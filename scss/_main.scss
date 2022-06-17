@@ -1,47 +1,7 @@
-// Detallo en lo enviado lo sucedido con el desafio
-
-//maps
-// En este caso no se como aplicarlo, no me doy cuenta si reemplaza una clase existente, si tengo utilizar el nombre de una clase ya creada en el html, si tengo que llamar a una nueva, sinceramente no entendi como aplicar maps y menos como hacer que funcione.
-// $redes: (
-//     instagram: violet,
-//     facebook: #0b0b7e,
-//     whatsapp: greenyellow,
-    
-// );
-// @each $red, $color in $redes {
-//     .red-#{$red} {
-//         color: $color;
-//         width: 35px;
-//         margin: 5px;
-//     }
-// } 
-// // mixin
-// el ejemlo del profesor lo entendi, pero no se como aplicarlo ya que no encuentro 2 o mas valores que pueda aplicar en 2 etiquetas a la vez, ya que pocos valores se repiten y no entiendo bien la funcion
-// // @mixin size {
-//     margin: 10px;
-//     font-weight: 500;
-// }
-          
-    
-// p{
-//     @include size;
-//     justify-content: $just-aling;
-//     justify-items: $just-aling;
-    
-// }
-// //extend
-// en este caso me pasa lo mismo que los anteriores, no entiendo caundo utilizarlo( mas alla de que entiendo su funcion)
-// .crucero-text{
-//     @extend .crucero;
-//     font-size: 17px;
-//     font-weight: 500;
-//      margin-top: $pym15;
-//     margin-bottom: $pym15;
-//     padding-left:60px;
-           
-//     }
 main {
+    min-height: calc(100vh - 200px);
     background-color: #709edb;
+  
 
     .eslogan{
         background-color: #5e6c88;
@@ -51,9 +11,12 @@ main {
         height: 70vh;
         color: $color-primary;
         padding: $pym15;
-        width: 98%;
+        width: 100%;
         text-align: $just-aling;
         animation: eslogan 2s infinite ease-in;
+    }
+    .viajes {
+        text-align: center;
     }
  
 @keyframes eslogan {
@@ -143,7 +106,7 @@ main {
                 .card-img{
                     background-color: black;
                     background-position: center center;
-                    background-size: 100%;
+                    background-size: cover;
                     background-repeat: no-repeat;   
                     height: 220px;
                     width: auto;
@@ -316,7 +279,7 @@ main {
         }
         .animate__zoomInDown{
             animation: animate__animated animate__zoomInDown 3s infinite;
-            color: #740060;
+            color: #084298;
         }
       
        
@@ -324,9 +287,21 @@ main {
     }
 
     .main-empresa {
+
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+
+        div {
+            width: 50%;
+        }
+
+
         
         h1{
-            display: flex;
+                        
             text-align: $just-aling;
             justify-content: $just-aling;
             margin-top: 0px;
@@ -341,10 +316,9 @@ main {
         }
 
         .img-empresa{
-            display: flex;
-            width: 900px;
-            padding-left: 80px;
-            height: 100vh;
+            max-width: 100%;
+            padding-left: 40px;
+            height: auto;
         }
         
         
@@ -354,5 +328,93 @@ main {
         background-color: #e6e6e6;
     }
   
-   
+    .main-destinos {
+
+        .img-destinos-destacado {
+            min-height: 100%;
+            background-size: cover;
+            background-position: 0px -165px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Estatua_de_la_Libertad_New_York.jpg');
+        }
     
+        .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 1.5rem; 
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; 
+      }
+      .gallery-item--1 {
+    
+      grid-column: 1 / span 2; 
+      grid-row: 1 / span 2;
+    }
+    
+    .gallery-item--2 {
+    
+      grid-column: 3 / span 2; 
+      grid-row: 1 / span 2;
+    }
+    
+    .gallery-item--3 {
+     
+      grid-column: 5 / span 4;
+      grid-row: 1 / span 5; 
+    }
+    
+    .gallery-item--4 {
+     
+      grid-column: 1 / span 4; 
+      grid-row: 3 / span 3;
+    }
+    
+    .gallery-item--5 {
+    
+      grid-column: 1 / span 4;
+      grid-row: 6 / span 3;
+    }
+    
+    .gallery-item--6 {
+     
+      grid-column: 5 / span 4;
+      grid-row: 6 / span 3;
+    }
+    
+    
+    .gallery-item{
+        position:relative;
+        
+        .promo {
+        top: 0;
+        left: 0;
+        }
+        .destino {
+            bottom:  0;
+            left: 0;
+            background: linear-gradient(1deg, black, transparent);
+            color: #ffff;
+            width: 100%;
+            padding:55px 10px 10px 10px;
+            margin:0;
+        }
+        .precio {
+            bottom:  0;
+        right: 0;
+        }
+    }
+
+
+    }
+    
+    
+    
+    
+    
+        
+    }
+   
