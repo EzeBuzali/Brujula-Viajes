@@ -12,28 +12,9 @@
 @import "footer";
 
 
-// No me toma la media quieries de lo siguiente: ( me gustaria saber donde se encuenta el error ya que no se aplica lo escrito en estos casos pero en los otros si)
-// Esto me sucede en sass, porque en el anterior desafio cuando no utulizabamos sass y si css, se aplicaba de forma correcta.
-// .section-dest{
-//     display: flex;
-//     flex-direction: column;
-// }
-// .animate__animated{
-//     animation:none
-// }
-//  .crucero {
-//     img{
-//         width: 65%;
-//      }  
-//      .crucero-text {
-//         display:none
-//     } 
-//  } 
 
-// Ademas te comento que no llegue a realizar el mapa, el cual tengo un poco mas claro que la ultima entrega.
-
-@media (max-width: 768px) {
-    .viajes{
+@media screen and (max-width: 768px) {
+    .viajes {
         .card-destinos { 
             grid-template-columns: 1fr ;
             grid-template-rows: repeat(3,1fr) ;
@@ -57,12 +38,17 @@
          } 
          
          .main-empresa {
+            flex-direction: column;
+            div {
+                width: 80%;
+            }
+
             p {
                 font-size: small;
             }
             .img-empresa {
-                width:450px;
-                height:60vh;
+                // width:100%;
+                height:auto;
              }
     
          } 
@@ -71,15 +57,84 @@
     footer {
         margin: 0;
         padding-top: 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         align-items: center;
         gap: 1em;
 
-        img {
-            width: 55%;
-            margin-left: 70px;
+        h4, h5 {
+            display: none;
         }
+    }
+
+
+    .main-destinos {
+
+    
+    
+        .gallery {
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-rows: repeat(14, 5vw) !important;
+            grid-gap: 1.5rem; 
+        
+          .gallery-item--3 {     
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 4; 
+          }
+      
+          .gallery-item--1 {    
+            grid-column: 1 ; 
+            grid-row: 5 / span 3;
+
+            p {
+                display: none ;
+            }
+          }    
+        
+          .gallery-item--2 {
+            
+            grid-column: 2; 
+            grid-row: 5 / span 3;
+            p {
+                display: none ;
+            }
+            }  
+    
+    
+    .gallery-item--4 {     
+      grid-column: 1 / span 2; 
+      grid-row: 8 / span 4;
+    }
+    
+    .gallery-item--5 {
+    
+      grid-column: 1 ;
+      grid-row: 12 / span 3;
+      p {
+        display: none ;
+    }
+    }
+    
+    .gallery-item--6 {
+     
+      grid-column: 2;
+      grid-row: 12 / span 3;
+      p {
+        display: none ;
+    }
+    }
+    
+    
+    
+
+
+    }
+    
+    
+    
+    
+    
+        
     }
 
         

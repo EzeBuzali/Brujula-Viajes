@@ -27,6 +27,7 @@ nav .redes img {
   margin: 5px; }
 
 main {
+  min-height: calc(100vh - 200px);
   background-color: #709edb; }
   main .eslogan {
     background-color: #5e6c88;
@@ -36,9 +37,11 @@ main {
     height: 70vh;
     color: #f3f3f3;
     padding: 15px;
-    width: 98%;
+    width: 100%;
     text-align: center;
     animation: eslogan 2s infinite ease-in; }
+  main .viajes {
+    text-align: center; }
 
 @keyframes eslogan {
   0% {
@@ -105,7 +108,7 @@ main {
     main .card-destinos .card-img {
       background-color: black;
       background-position: center center;
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       height: 220px;
       width: auto;
@@ -211,38 +214,99 @@ main {
     color: #001149; }
   .contacto-main .animate__zoomInDown {
     animation: animate__animated animate__zoomInDown 3s infinite;
-    color: #740060; }
+    color: #084298; }
 
-.main-empresa h1 {
+.main-empresa {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 5px; }
-
-.main-empresa p {
-  text-align: center;
-  justify-content: center;
-  padding: 15px;
-  font-weight: 400; }
-
-.main-empresa .img-empresa {
-  display: flex;
-  width: 900px;
-  padding-left: 80px;
-  height: 100vh; }
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px; }
+  .main-empresa div {
+    width: 50%; }
+  .main-empresa h1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 5px; }
+  .main-empresa p {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-weight: 400; }
+  .main-empresa .img-empresa {
+    max-width: 100%;
+    padding-left: 40px;
+    height: auto; }
 
 .main-promo {
   background-color: #e6e6e6; }
 
+.main-destinos .img-destinos-destacado {
+  min-height: 100%;
+  background-size: cover;
+  background-position: 0px -165px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Estatua_de_la_Libertad_New_York.jpg"); }
+
+.main-destinos .gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; }
+  .main-destinos .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+  .main-destinos .gallery .gallery-item--1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+  .main-destinos .gallery .gallery-item--2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2; }
+  .main-destinos .gallery .gallery-item--3 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 5; }
+  .main-destinos .gallery .gallery-item--4 {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 3; }
+  .main-destinos .gallery .gallery-item--5 {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 3; }
+  .main-destinos .gallery .gallery-item--6 {
+    grid-column: 5 / span 4;
+    grid-row: 6 / span 3; }
+  .main-destinos .gallery .gallery-item {
+    position: relative; }
+    .main-destinos .gallery .gallery-item .promo {
+      top: 0;
+      left: 0; }
+    .main-destinos .gallery .gallery-item .destino {
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(1deg, black, transparent);
+      color: #ffff;
+      width: 100%;
+      padding: 55px 10px 10px 10px;
+      margin: 0; }
+    .main-destinos .gallery .gallery-item .precio {
+      bottom: 0;
+      right: 0; }
+
 footer {
+  width: 100%;
+  bottom: 0;
+  height: 200px;
+  padding: 30px 0;
   background-color: #e0f7fa;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center; }
+  footer ul {
+    padding: 0; }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .viajes .card-destinos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -256,18 +320,50 @@ footer {
     width: 65%; }
   .crucero .crucero-text, main .crucero .crucero-text .crucero-text, main .crucero .crucero-contacto .crucero-text {
     display: none; }
-  .main-empresa p {
-    font-size: small; }
-  .main-empresa .img-empresa {
-    width: 450px;
-    height: 60vh; }
+  .main-empresa {
+    flex-direction: column; }
+    .main-empresa div {
+      width: 80%; }
+    .main-empresa p {
+      font-size: small; }
+    .main-empresa .img-empresa {
+      height: auto; }
   footer {
     margin: 0;
     padding-top: 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     gap: 1em; }
-    footer img {
-      width: 55%;
-      margin-left: 70px; } }
+    footer h4, footer h5 {
+      display: none; }
+  .main-destinos .gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(14, 5vw) !important;
+    grid-gap: 1.5rem; }
+    .main-destinos .gallery .gallery-item--3 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 4; }
+    .main-destinos .gallery .gallery-item--1 {
+      grid-column: 1;
+      grid-row: 5 / span 3; }
+      .main-destinos .gallery .gallery-item--1 p {
+        display: none; }
+    .main-destinos .gallery .gallery-item--2 {
+      grid-column: 2;
+      grid-row: 5 / span 3; }
+      .main-destinos .gallery .gallery-item--2 p {
+        display: none; }
+    .main-destinos .gallery .gallery-item--4 {
+      grid-column: 1 / span 2;
+      grid-row: 8 / span 4; }
+    .main-destinos .gallery .gallery-item--5 {
+      grid-column: 1;
+      grid-row: 12 / span 3; }
+      .main-destinos .gallery .gallery-item--5 p {
+        display: none; }
+    .main-destinos .gallery .gallery-item--6 {
+      grid-column: 2;
+      grid-row: 12 / span 3; }
+      .main-destinos .gallery .gallery-item--6 p {
+        display: none; } }
